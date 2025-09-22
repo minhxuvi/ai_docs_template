@@ -1,0 +1,19 @@
+# Build artifacts
+out/
+*.vsix
+
+# Dependencies
+node_modules/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode-test/
+*.log
+
+# Sensitive files
+.env
+*.key
+*.pem
