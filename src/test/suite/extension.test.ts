@@ -12,11 +12,11 @@ suite('Extension Test Suite', () => {
         // First ensure the extension is activated
         const extension = vscode.extensions.getExtension('xuvi.xuvi');
         assert.ok(extension);
-        
+
         if (!extension.isActive) {
             await extension.activate();
         }
-        
+
         const commands = await vscode.commands.getCommands(true);
         assert.ok(commands.includes('xuvi.generateText'), 'Command xuvi.generateText should be registered');
     });
